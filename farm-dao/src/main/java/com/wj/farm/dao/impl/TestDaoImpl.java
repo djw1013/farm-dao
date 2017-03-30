@@ -16,7 +16,9 @@ public class TestDaoImpl implements ITestDao{
 
     @Resource
     private JdbcTemplate jdbcTemplate;
-    
+    /**
+     * 
+     */
     public List<Map<String, Object>> queryList() {
         List<Map<String, Object>> list = jdbcTemplate.queryForList(SqlUtil.getSql("test", "selectSql"));
         return list;
