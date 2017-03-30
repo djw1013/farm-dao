@@ -3,7 +3,7 @@
 	
 	<sqltemplate id="selectSql">
 		<![CDATA[
-			select * from address_info_0
+			select * from temp_test where name=?
 		]]>
 	</sqltemplate>
 

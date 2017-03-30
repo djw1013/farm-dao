@@ -1,8 +1,9 @@
 package com.wj.farm.dao;
 
 import java.util.List;
-import java.util.Map;
+
+import com.wj.farm.entity.TestEntity;
 
 public interface ITestDao {
-    List<Map<String, Object>> queryList();
+    List<TestEntity> queryList(String name);
 }
